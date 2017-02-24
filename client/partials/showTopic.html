@@ -1,0 +1,12 @@
+<div ng-controller="topicsController as TC">
+	<h3>{{TC.topicInfo.topic}}</h3>
+	<div class="col-sm-5">
+		<h5>Topic Details</h5>
+		<ul class="list-group">
+ 			Description:<li class="list-group-item">{{TC.topicInfo.description}}</li>
+ 			Category:<li class="list-group-item">{{TC.topicInfo.category}}</li>
+ 			Likes: <li class="list-group-item">{{TC.topicInfo.likes}}</li>
+ 			By:<li class="list-group-item">{{TC.topicInfo.user.name}}</li>
+ 		</ul>
+	</div>
+</div>

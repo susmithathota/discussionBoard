@@ -1,0 +1,9 @@
+<div ng-controller="sessionController as SC">
+	<h3>{{SC.userInfo.name}}</h3>
+	<div class="col-sm-6">
+		<h5>Posted Topics</h5>
+		<ul class="list-group">
+ 			<li class="list-group-item" ng-repeat="topic in SC.userInfo.topics">{{topic.topic}},{{topic.likes}} likes</li>
+ 		</ul>
+	</div>
+</div>

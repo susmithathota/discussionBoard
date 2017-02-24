@@ -1,0 +1,8 @@
+<h2>Welcome Login</h2>
+<div ng-controller="sessionController as SC">
+	<p style="color:red" ng-repeat="error in SC.errors track by $index">{{error}}</p>
+	<form ng-submit="SC.login()">
+		<input type="text" name="" ng-model="SC.logReg.name" placeholder="please enter your name">
+		<input type="submit" name="" value="login or Register here">
+	</form>
+</div>
